@@ -1,0 +1,59 @@
+Independent 200-Ligand Validation
+=================================
+
+Cohort
+------
+200 previously unseen AutoDock Vina-ranked ligands.
+Selection: ranks 76-275 from the original ranked docking results.
+
+Original workflow
+-----------------
+Workflow:
+Vina pose 1 PDBQT -> Open Babel reperception -> MOL2 ->
+ACPYPE GAFF2/AM1-BCC with charge guessing.
+
+Started: 200
+PASS: 79
+FAIL: 121
+Success rate: 39.5%
+Failure rate: 60.5%
+
+Provenance-aware workflow
+-------------------------
+Workflow:
+Authoritative ZINC SDF chemistry + original Vina pose coordinates ->
+heavy-atom mapping -> reconstructed SDF ->
+explicit formal charge -> ACPYPE GAFF2/AM1-BCC.
+
+PASS: 200
+FAIL: 0
+Success rate: 100%
+
+All 121 ligands that failed the original workflow were successfully
+parameterized by the provenance-aware workflow.
+
+Charge validation
+-----------------
+Formal charge of reconstructed molecule compared with the net charge
+obtained by summing final ACPYPE AM1-BCC partial charges.
+
+MATCH: 200
+MISMATCH: 0
+
+Final pose preservation
+-----------------------
+PASS: 200
+FAIL: 0
+
+All 200 ligands passed the predefined final heavy-atom pose-preservation
+criterion of maximum displacement < 0.0001 Angstrom.
+
+Original-workflow failure classification
+----------------------------------------
+ODD_ELECTRON: 96
+CHARGE_GUESS: 13
+SQM_EXECUTION_FAILURE: 10
+ATOM_CLASH: 2
+
+Total classified failures: 121
+

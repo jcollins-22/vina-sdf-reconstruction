@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+*.acpype/
+output/
+test_output/
+
+*.swp
+*.swo
+*~

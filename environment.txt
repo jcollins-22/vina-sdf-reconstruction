@@ -1,0 +1,21 @@
+Software and Computational Environment
+
+Docking
+AutoDock Vina 1.1.2
+
+Ligand reconstruction and validation
+Python 3.8.20
+RDKit 2024.03.2
+NumPy 1.24.4
+
+Original PDBQT-based workflow
+Open Babel 3.1.0
+
+Ligand parameterization
+ACPYPE 2023.10.27
+Antechamber 22.0
+GAFF2
+AM1-BCC partial charges
+
+Operating system used for reconstruction and parameterization
+CentOS Linux 7 (Core)

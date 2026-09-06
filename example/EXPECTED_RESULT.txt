@@ -1,0 +1,25 @@
+Tested example:
+ZINC000247714414
+
+Command:
+python sdf_reconstruction.py ZINC000247714414 \
+    --sdf example/ZINC000247714414.sdf \
+    --pdbqt example/ZINC000247714414_Nterm_out.pdbqt \
+    --output-dir example/output
+
+Observed result:
+Heavy atoms: 32
+Heavy-atom composition: PASS
+VALID MAPPING FOUND: cutoff=1.65 Å matches=1
+RECONSTRUCTED POSE CHECK: max displacement=0.000000 Å RMSD=0.000000 Å
+Hydrogens added: 22
+HYDROGEN CLASH CHECK: PASS
+Formal charge: 1
+ACPYPE: PASS
+FINAL ACPYPE POSE CHECK:
+Heavy atoms compared: 32
+Max difference: 0.000000 Å
+Mean difference: 0.000000 Å
+RMS difference: 0.000000 Å
+FINAL POSE PRESERVATION: PASS
+FULL SDF RESCUE PASS: ZINC000247714414
