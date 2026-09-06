@@ -117,6 +117,7 @@ The supplied SDF must represent the intended chemical structure corresponding to
 ```text
 .
 ├── README.md
+├── LICENSE
 ├── environment.txt
 ├── sdf_reconstruction.py
 ├── example/
