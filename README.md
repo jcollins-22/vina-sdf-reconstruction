@@ -55,7 +55,7 @@ See `environment.txt` for the tested software environment.
 For most users:
 
 ```bash
-python sdf_reconstruction.py ligand1 \
+python src/sdf_reconstruction.py ligand1 \
     --sdf ligand1.sdf \
     --pdbqt ligand1_out.pdbqt \
     --output-dir output
@@ -68,7 +68,7 @@ The PDBQT file may contain multiple Vina models. The workflow extracts and recon
 ### Included example
 
 ```bash
-python sdf_reconstruction.py ZINC000247714414 \
+python src/sdf_reconstruction.py ZINC000247714414 \
     --sdf example/ZINC000247714414.sdf \
     --pdbqt example/ZINC000247714414_Nterm_out.pdbqt \
     --output-dir example/output
@@ -87,7 +87,7 @@ FULL SDF RESCUE PASS: ZINC000247714414
 For pre-resolved datasets:
 
 ```bash
-python sdf_reconstruction.py ZINC000247714414 \
+python src/sdf_reconstruction.py ZINC000247714414 \
     --mapping resolved_mapping.tsv \
     --templates zinc_templates \
     --ligands ligands \
